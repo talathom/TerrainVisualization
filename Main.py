@@ -1,5 +1,4 @@
 ﻿import vizcam
-from Controller import *
 
 window = viz.MainWindow
 viz.window.setSize(640, 480)
@@ -9,7 +8,7 @@ mat = viz.Matrix()
 mat.postTrans(100, 1950, 100)
 view.setMatrix(mat)
 
-inputFile = open('greysriverOrig.asc', 'r')
+inputFile = open('greysriver.asc', 'r')
 firstLine = inputFile.readline()
 NCols = int(firstLine.split()[1])
 secondLine = inputFile.readline()
