@@ -1,4 +1,5 @@
 ﻿import vizcam
+from Controller import *
 
 window = viz.MainWindow
 viz.window.setSize(640, 480) # Set Window Size
@@ -65,3 +66,5 @@ for z in range(0, NRows-1):
 viz.endLayer()
 
 viz.go()
+
+c = Controller()
